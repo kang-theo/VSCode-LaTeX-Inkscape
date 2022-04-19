@@ -1,0 +1,160 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    //b. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
+        //https://www.pbb.wtf/posts/LaTeX-Inkscape
+        //https://github.com/sleepymalc/VSCode-LaTeX-Inkscape/blob/main/README.md
+        //https://github.com/gillescastel/inkscape-figures
+        //https: //github.com/gillescastel/inkscape-shortcut-manager
+        //https://github.com/gillescastel/lecture-notes
+
+    // Sympy setup (kcy: not installed)
+    // {
+    //     "key": "shift+e",
+    //     "command": "latex-sympy-calculator.equal",
+    //     "when": "editorHasSelection && editorTextFocus && resourceLangId == 'latex' || editorHasSelection && editorTextFocus && resourceLangId == 'markdown'"
+    // },
+    // {
+    //     "key": "shift+alt+cmd+e",
+    //     "command": "-latex-sympy-calculator.equal",
+    //     "when": "editorHasSelection && editorTextFocus && resourceLangId == 'latex' || editorHasSelection && editorTextFocus && resourceLangId == 'markdown'"
+    // },
+    // {
+    //     "key": "shift+r",
+    //     "command": "latex-sympy-calculator.replace",
+    //     "when": "editorHasSelection && editorTextFocus && resourceLangId == 'latex' || editorHasSelection && editorTextFocus && resourceLangId == 'markdown'"
+    // },
+    // {
+    //     "key": "shift+alt+cmd+r",
+    //     "command": "-latex-sympy-calculator.replace",
+    //     "when": "editorHasSelection && editorTextFocus && resourceLangId == 'latex' || editorHasSelection && editorTextFocus && resourceLangId == 'markdown'"
+    // },
+    // Auto Correction setup (kcy: not installed)
+    // {
+    //     "key": "cmd+l",
+    //     "command": "extension.multiCommand.execute",
+    //     "args": {
+    //         "sequence": [
+    //             "cSpell.goToPreviousSpellingIssue",
+    //             {
+    //                 "command": "editor.action.codeAction",
+    //                 "args": {
+    //                     "kind": "quickfix",
+    //                     "apply": "first"
+    //                 }
+    //             },
+    //             "cursorUndo",
+    //         ]
+    //     }
+    // },
+    // {
+    //     "key": "cmd+k",
+    //     "command": "extension.multiCommand.execute",
+    //     "args": {
+    //         "sequence": [
+    //             "editor.action.marker.prev",
+    //             {
+    //                 "command": "editor.action.codeAction",
+    //                 "args": {
+    //                     "kind": "quickfix",
+    //                     "apply": "first"
+    //                 }
+    //             },
+    //             "cursorUndo",
+    //         ]
+    //     }
+    // },
+
+    //-------------------------------------------------------------------------------------------------------------
+    // Inkscape setup
+    {
+        // Usage:
+        // 1. Define a in notes project folder, modify the project path to the notes folder in setting.json. It must have a folder called "Figures". Keys below must be invoked when cursor is in a note tex file.
+        // 2. "ctrl+i+w": Invoke inkscape-figures watch(fswatch is really used) to watch the notes project folder. If .svg is generated without pdf and pdf_tex, then generate them.
+        // 3. "ctrl+i+c": Automatically create inkscape document and insert the figures in a note tex file.
+        //                It does:
+        //                      1) Copy the content under cursor (normally the figure name) into your clipboard 
+        //                      2) Delete that copied content and insert a snippet defined in latex.json (defined in vscode->user.snippets->latex.code-snippets). 
+        //                      3) Lastly, send a command in a terminal by command runner, with the command inkscapeCreate(defined in vscode setting.json). This command will open a new document with name specified in 1) and insert snippet for figures in tex file.
+        //                      4) Draw pictures in inkscape and save the project(command+s), and rename the caption in the note tex file.
+        //                      5) Rebuild tex and check the pdf updated to see the effect.
+
+        // "key": "ctrl+f",
+        "key": "ctrl+i c",
+        //command run + multi-command
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "editor.action.clipboardCopyAction",
+                "editor.action.insertLineAfter",
+                "cursorUp",
+                "editor.action.deleteLines",
+                {
+                    "command": "editor.action.insertSnippet",
+                    "args": {
+                        "name": "incfig"
+                    }
+                },
+                {
+                    "command": "command-runner.run",
+                    "args": {
+                        "command": "inkscapeCreate",
+                    },
+                    "terminal": {
+                        "name": "runCommand",
+                        "shellArgs": [],
+                        "autoClear": true,
+                        "autoFocus": false
+                    }
+                },
+            ]
+        },
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Insert'"
+    },
+    {
+        // "key": "ctrl+f",
+        "key": "ctrl+i e",  // inscape edit
+        "command": "command-runner.run",
+        "args": {
+            "command": "inkscapeEdit",
+            "terminal": {
+                "name": "runCommand",
+                "shellArgs": [],
+                "autoClear": true,
+                "autoFocus": false
+            }
+        },
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        // "key": "ctrl+f", // avoid ctrl+f conflict with that in vim mode
+        "key": "ctrl+i w",  // inscape starts watch
+        "command": "command-runner.run",
+        "args": {
+            "command": "inkscapeStart",
+            "terminal": {
+                "name": "runCommand",
+                "shellArgs": [],
+                "autoClear": true,
+                "autoFocus": false
+            }
+        },
+        // "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Visual'"
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        // "key": "ctrl+c",
+        "key": "ctrl+q c",  // open quiver in chrome, to be tested
+        "command": "command-runner.run",
+        "args": {
+            "command": "quiver",
+            "terminal": {
+                "name": "runCommand",
+                "shellArgs": [],
+                "autoClear": true,
+                "autoFocus": false
+            }
+        },
+        "when": "editorTextFocus"
+    }
+    //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
+]

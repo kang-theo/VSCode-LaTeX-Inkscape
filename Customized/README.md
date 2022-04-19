@@ -1,0 +1,27 @@
+# Two steps to make it work
+
+> From [Gilles Castel: How I draw figures for my mathematical lecture notes using Inkscape](https://castel.dev/post/lecture-notes-2/):  If you want to try this out for yourself, you can find both my [script for managing figures in Vim](https://github.com/gillescastel/inkscape-figures) and my [Inkscape shortcut manager](https://github.com/gillescastel/inkscape-shortcut-manager)
+> on Github. The first script should work out of the box on both Mac and Linux-based systems; the second only works on Linux (it uses Xlib) and is a bit harder to set up.
+
+However, this only works on Linux+Vim, I find a Repo transfering the flow from Linux to macOS: [sleepymalc/VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape).
+
+# Step One: inscape-figures
+
+**Done**.
+
+## Usage
+
+1. Define a in notes project folder, modify the project path to the notes folder in setting.json. It must have a folder called "Figures". Keys below must be invoked when cursor is in a note tex file.
+2. ``ctrl+i w``: Invoke inkscape-figures watch(fswatch is really used) to watch the notes project folder. If .svg is generated without pdf and pdf_tex, then generate them.
+3. ``ctrl+i c``: Automatically create inkscape document and insert the figures in a note tex file.
+   It does:
+   1) Copy the content under cursor (normally the figure name) into your clipboard
+   2) Delete that copied content and insert a snippet defined in latex.json (defined in vscode->user.snippets->latex.code-snippets).
+   3) Lastly, send a command in a terminal by command runner, with the command inkscapeCreate(defined in vscode setting.json). This command will open a new document with name specified in 1) and insert snippet for figures in tex file.
+   4) Draw pictures in inkscape and save the project(command+s), and rename the caption in the note tex file.
+   5) Rebuild tex and check the pdf updated to see the effect.
+4. ``ctrl+i e``: Open the figures (with ''choose'') again to modified them as needed later.
+
+# Step Two: inkscape shortcut manager
+
+**Todo**.

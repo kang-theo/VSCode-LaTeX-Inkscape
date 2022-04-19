@@ -1,0 +1,29 @@
+{
+    //b. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
+        //https://www.pbb.wtf/posts/LaTeX-Inkscape
+        //https://github.com/sleepymalc/VSCode-LaTeX-Inkscape/blob/main/README.md
+        //https://github.com/gillescastel/inkscape-figures
+        //https://github.com/gillescastel/inkscape-shortcut-manager
+        //https://github.com/gillescastel/lecture-notes
+
+    // Auto Correction setup
+    // "cSpell.diagnosticLevel": "Warning",
+
+    // Inkscape setup
+    "command-runner.terminal.name": "runCommand",
+    "command-runner.terminal.autoClear": true,
+    "command-runner.terminal.autoFocus": false,
+    "command-runner.commands": {
+        // kTheo: ${workspaceFolder} is the root of a vscode project
+        // 1. For notes folder is the project root:
+        // "inkscapeCreate": "inkscape-figures create ${selectedText} ${workspaceFolder}/Figures/",
+        // "inkscapeEdit": "inkscape-figures edit ${workspaceFolder}/Figures/",
+        // 2. For notes folder is a subfolder of a project:
+        "inkscapeCreate": "inkscape-figures create ${selectedText} ${workspaceFolder}/Customized/kTestNote/Figures/",
+        "inkscapeEdit": "inkscape-figures edit ${workspaceFolder}/Customized/kTestNote/Figures/",
+
+        "inkscapeStart": "inkscape-figures watch",
+        "quiver": "open -na 'Google Chrome' --args --new-window <path-to-quiver>/quiver/src/index.html"
+    },
+    //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
+}

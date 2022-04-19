@@ -1,0 +1,48 @@
+{
+	// Place your global snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+	// Example:
+	// "Print to console": {
+	// 	"scope": "javascript,typescript",
+	// 	"prefix": "log",
+	// 	"body": [
+	// 		"console.log('$1');",
+	// 		"$2"
+	// 	],
+	// 	"description": "Log output to console"
+	// }
+
+    //b. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
+        //https://www.pbb.wtf/posts/LaTeX-Inkscape
+        //https://github.com/sleepymalc/VSCode-LaTeX-Inkscape/blob/main/README.md
+        //https://github.com/gillescastel/inkscape-figures
+		//https://github.com/gillescastel/inkscape-shortcut-manager
+		//https://github.com/gillescastel/lecture-notes
+	"incfig": {
+		"prefix": "incfig",
+		"body": [
+			"\\begin{figure}[H]",
+			"\t\\centering",
+			"\t\\incfig{${1:$CLIPBOARD}}",
+			"\t\\caption{${2:What is the figure?}}",
+			"\t\\label{fig:${1:$CLIPBOARD}}",
+			"\\end{figure}",
+		],
+		"description": "Inserts mathematical diagram"
+	}
+	// Todo: extend to specify the figure size, check the definition of incfig below or in gillescastel's lecture-notes preamble
+	// \newcommand{\incfig}[1]{%
+	// 	\def\svgwidth{\columnwidth}
+	// 	\import{./figures/}{#1.pdf_tex}
+	// }
+	// % use \incfig[0.3]{figure-name} to set the size of the figures.
+	// \newcommand{\incfigsetwidth}[2][1]{%
+	// 	\def\svgwidth{#1\columnwidth}
+	// 	\import{./figures/}{#2.pdf_tex}
+	// }
+    //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
+}

@@ -25,3 +25,7 @@ However, this only works on Linux+Vim, I find a Repo transfering the flow from L
 # Step Two: inkscape shortcut manager
 
 **Todo**.
+
+From “[sleepymalc](https://github.com/sleepymalc)/[VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape)”: After some research, although there is a way to let the original script in [inkscape-shortcut-manager](https://github.com/gillescastel/inkscape-shortcut-manager) run correctly since it depends on **xlib**, which is no longer used by macOS for almost every application(including Inkscape, as expected). Hence, the only thing I can do now is to give up. In a perceivable future, if I have time to find an alternative way to interrupt the window activity in macOS, I'll try to configure it for macOS.
+
+Stay tuned.

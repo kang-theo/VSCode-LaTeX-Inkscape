@@ -90,8 +90,17 @@ ps.
 <img src="https://www.mathcha.io/image/notebook-icon.png" width="48">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rMHnsUB1YwfZkaSaac7E75_xsjqGK0BYFrLy0XHf3etrOTgGxgBbdHHU7fkoL2zIz0I&usqp=CAU" width="48">
 
-## 
-<nobr>5. Correcting spelling mistakes on the fly</nobr>
+# Credits
 
+Thanks to **Gilles Castel** and **Pingbang Hu** for their inspiring work. Hope the workflow can become popular.
 
-<nobr><b>Todo</b>.</nobr>
+# Related Projects
+1. [Gilles Castel's Main Page](https://castel.dev/)
+2. [Gilles Castel's Notes](https://castel.dev/notes)
+3. [Gilles Castel's inkscape-figures](https://github.com/gillescastel/inkscape-figures)
+4. [Gilles Castel's shortcut manager](https://github.com/gillescastel/inkscape-shortcut-manager)
+5. [Pingbang Hu's Main Page](https://www.pbb.wtf/posts/LaTeX-Inkscape)
+6. [Pingbang Hu's VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape)
+7. [Inkscape Tutorials](https://www.youtube.com/watch?v=eyqH0IrzYLc&list=PLxtauMB7RON_2tg-mRQTuieFUr29IOKzW)
+8. [WriteTex: Latex/Tex editor for Inkscape](https://inkscape.org/da/~longqi/%E2%98%85writetex)
+9. [TexText: Re-editable LaTeX graphics for Inkscape](https://textext.github.io/textext/)

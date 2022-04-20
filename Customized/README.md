@@ -81,7 +81,7 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
 
 Like Inkscpae, we can add some supports for tables.
 
-> Automation work still need to be done.
+- [ ] Automation work still need to be done.
 
 Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivankokan/Excel2LaTeX) add-in:
 

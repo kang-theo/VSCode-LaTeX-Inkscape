@@ -5,11 +5,11 @@
 
 However, this only works on Linux+Vim, I find a Repo transfering the flow from Linux to macOS: [sleepymalc/VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) `<span id="context_snippet">` using "Context".
 
-# Step One: inscape-figures
+## Step One: inscape-figures
 
 **Done**.
 
-## Usage
+### Usage
 
 1. Define a in notes project folder, modify the project path to the notes folder in setting.json. It must have a folder called "Figures". Keys below must be invoked when cursor is in a note tex file.
 2. ``ctrl+i w``: Invoke inkscape-figures watch(fswatch is really used) to watch the notes project folder. If .svg is generated without pdf and pdf_tex, then generate them.
@@ -22,7 +22,7 @@ However, this only works on Linux+Vim, I find a Repo transfering the flow from L
    5) Rebuild tex and check the pdf updated to see the effect.
 4. ``ctrl+i e``: Open the figures (with ''choose'') again to modified them as needed later.
 
-# Step Two: inkscape shortcut manager
+## Step Two: inkscape shortcut manager
 
 **Todo**.
 
@@ -39,20 +39,20 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
 > The solution to this problem is adding a **context** to snippets. Using the syntax highlighting of Vim, it can be determined whether or not UltiSnips should expand the snippet depending if you’re in math or text. Add the following to the top of your snippets file:
 > [How I&#39;m able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/#context) [#Context](#context_snippet)
 ## 2. Excalidraw.com integration
-   [Excalidraw.com](https://excalidraw.com) can draw and export **.svg** figures, so:
+[Excalidraw.com](https://excalidraw.com) can draw and export **.svg** figures, so:
 
-   1. Draw figures in Excalidraw, and export as **svg**.
-   2. Copy figures into kTestNote/Figures. The ```inscape-figures watch``` will monitor the figures and invoke Inkscape to generate **pdf_tex** and **pdf**.
-   3. Use ```ctrl+i e``` to invoke ```Inscape-figures edit``` to edit the figures in Inkscape(like adding some text, mathmatic formula, etc.), taking the advantage of its pdf_tex pros.
-   4. Add code below to kTestNote.tex and build the it.
-      ```latex
-      \begin{figure}[H]
-         \centering
-         \incfig{font_test_of_excalidraw_svg_in_inkscape}
-         \caption{Reedit Excalidraw svg in Inkscape}
-         \label{fig:font_test_of_excalidraw_svg_in_inkscape}
-      \end{figure}
-      ```
+1. Draw figures in Excalidraw, and export as **svg**.
+2. Copy figures into kTestNote/Figures. The ```inscape-figures watch``` will monitor the figures and invoke Inkscape to generate **pdf_tex** and **pdf**.
+3. Use ```ctrl+i e``` to invoke ```Inscape-figures edit``` to edit the figures in Inkscape(like adding some text, mathmatic formula, etc.), taking the advantage of its pdf_tex pros.
+4. Add code below to kTestNote.tex and build the it.
+   ```latex
+   \begin{figure}[H]
+      \centering
+      \incfig{font_test_of_excalidraw_svg_in_inkscape}
+      \caption{Reedit Excalidraw svg in Inkscape}
+      \label{fig:font_test_of_excalidraw_svg_in_inkscape}
+   \end{figure}
+   ```
 ## 3. Excel tables integration
 Like Inkscpae, we can add some support for tables.
 > Automation work still need to be done.

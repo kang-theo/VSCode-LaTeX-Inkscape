@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   version="1.1"
+   viewBox="0 0 363 92"
+   width="726"
+   height="184"
+   id="svg56"
+   sodipodi:docname="font_test_of_excalidraw_svg_in_inkscape.svg"
+   inkscape:version="1.1.2 (b8e25be8, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview58"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.00784314"
+     inkscape:pagecheckerboard="0"
+     showgrid="false"
+     showborder="true"
+     inkscape:zoom="0.49178089"
+     inkscape:cx="421.93587"
+     inkscape:cy="92.520878"
+     inkscape:window-width="1407"
+     inkscape:window-height="847"
+     inkscape:window-x="33"
+     inkscape:window-y="25"
+     inkscape:window-maximized="0"
+     inkscape:current-layer="svg56" />
+  <!-- svg-source:excalidraw -->
+  <defs
+     id="defs4">
+    <linearGradient
+       inkscape:collect="always"
+       id="linearGradient933">
+      <stop
+         style="stop-color:#81ff00;stop-opacity:1;"
+         offset="0"
+         id="stop929" />
+      <stop
+         style="stop-color:#81ff00;stop-opacity:0;"
+         offset="1"
+         id="stop931" />
+    </linearGradient>
+    <style
+       id="style2">
+      @font-face {
+        font-family: &quot;Virgil&quot;;
+        src: url(&quot;https://excalidraw.com/Virgil.woff2&quot;);
+      }
+      @font-face {
+        font-family: &quot;Cascadia&quot;;
+        src: url(&quot;https://excalidraw.com/Cascadia.woff2&quot;);
+      }
+    </style>
+    <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient933"
+       id="linearGradient935"
+       x1="275.81"
+       y1="48.469999"
+       x2="351.17"
+       y2="48.469999"
+       gradientUnits="userSpaceOnUse" />
+  </defs>
+  <rect
+     x="0"
+     y="0"
+     width="368.0835"
+     height="105.21727"
+     fill="#ffffff"
+     id="rect6"
+     style="stroke-width:1.07688" />
+  <g
+     stroke-linecap="round"
+     transform="translate(10 10) rotate(0 34 32.5)"
+     id="g10">
+    <path
+       d="M17.72 3.28 C23 -0.07, 32.35 -1.13, 39.16 -0.13 C45.97 0.87, 53.89 4.67, 58.59 9.29 C63.28 13.91, 66.4 21.23, 67.35 27.58 C68.29 33.92, 67.27 41.66, 64.24 47.38 C61.22 53.1, 54.9 59.13, 49.18 61.9 C43.46 64.66, 36.43 65.04, 29.94 63.99 C23.45 62.94, 15.24 59.85, 10.25 55.6 C5.25 51.36, 1.25 44.73, -0.03 38.52 C-1.31 32.31, -0.88 24.21, 2.58 18.34 C6.05 12.47, 17.66 5.83, 20.78 3.33 C23.9 0.83, 21.08 2.84, 21.31 3.34 M29.31 -0.95 C35.68 -2.26, 43.74 0.15, 49.57 3.32 C55.39 6.49, 61.15 12.22, 64.25 18.08 C67.35 23.95, 69.06 32.36, 68.18 38.53 C67.31 44.7, 63.77 50.83, 59.02 55.1 C54.27 59.37, 46.62 63.01, 39.69 64.15 C32.76 65.3, 23.55 64.69, 17.43 61.99 C11.31 59.29, 6.06 53.73, 3 47.96 C-0.07 42.19, -1.94 33.98, -0.96 27.37 C0.02 20.76, 4.15 12.53, 8.87 8.28 C13.58 4.04, 23.9 3.05, 27.34 1.91 C30.79 0.78, 29.09 1.27, 29.53 1.48"
+       stroke="#000000"
+       stroke-width="1"
+       fill="none"
+       id="path8" />
+  </g>
+  <g
+     stroke-linecap="round"
+     transform="translate(144 18) rotate(0 35 32)"
+     id="g14">
+    <path
+       d="M36.93 -1.64 C44.21 7.92, 50.86 12.51, 68.81 31.99 M35.92 0.04 C48.16 12.06, 60.69 23.99, 69.84 33.1 M68.92 33.69 C58.67 41.22, 49.94 48.16, 34.5 65.97 M69.66 33.89 C56.87 44.23, 45.52 55.4, 36.83 63.35 M35.28 63.61 C24.7 55.07, 11.61 45.04, 1.69 31.7 M36.32 63.7 C26.05 55.55, 15.27 47.88, -0.34 32.25 M-0.29 34.39 C8.37 24.23, 14.72 19.52, 37.06 -1.84 M-0.59 32.4 C12.43 21.68, 27.52 8.19, 35.54 -0.56"
+       stroke="#000000"
+       stroke-width="1"
+       fill="none"
+       id="path12" />
+  </g>
+  <g
+     stroke-linecap="round"
+     transform="translate(275 21) rotate(0 39 27.5)"
+     id="g18">
+    <path
+       d="M-0.33 -1.25 C17.35 -0.8, 40.35 1.97, 78.54 1.29 M-0.26 0.16 C20.4 1.5, 40.87 0.85, 77.26 -0.65 M79.17 -1.71 C78.89 16.21, 76.59 28.55, 78.28 56.68 M77.76 -0.93 C78.44 17.91, 77.09 35.59, 78.43 55.22 M76.17 54.89 C56.04 56.46, 31.6 56.92, 1.25 54.05 M78.91 55.67 C59.02 53.85, 39.83 54.17, -0.15 54.72 M0.71 54.59 C0.2 35.75, 0.43 21.28, -0.55 1.25 M-0.56 55.36 C-0.73 37.79, -0.11 19.91, 0.81 0.05"
+       stroke="#000000"
+       stroke-width="1"
+       fill="none"
+       id="path16" />
+  </g>
+  <g
+     stroke-linecap="round"
+     id="g32">
+    <g
+       transform="translate(85 52) rotate(0 29.30891652533785 -0.20412048695123985)"
+       id="g22">
+      <path
+         d="M-0.04 0.7 C9.69 0.84, 47.96 0.85, 57.97 0.6 M-1.53 0.03 C8.61 -0.17, 49.93 -1.22, 60.14 -1.21"
+         stroke="#000000"
+         stroke-width="1"
+         fill="none"
+         id="path20" />
+    </g>
+    <g
+       transform="translate(85 52) rotate(0 29.30891652533785 -0.20412048695123985)"
+       id="g26">
+      <path
+         d="M33.74 7.56 C40.87 8.2, 45.85 3.24, 60.42 0.47 M32.32 8.34 C42.35 5.46, 50.16 1.4, 60.58 -0.99"
+         stroke="#000000"
+         stroke-width="1"
+         fill="none"
+         id="path24" />
+    </g>
+    <g
+       transform="translate(85 52) rotate(0 29.30891652533785 -0.20412048695123985)"
+       id="g30">
+      <path
+         d="M33.46 -12.62 C40.63 -6.65, 45.68 -6.28, 60.42 0.47 M32.04 -11.83 C42.11 -8.02, 50 -5.38, 60.58 -0.99"
+         stroke="#000000"
+         stroke-width="1"
+         fill="none"
+         id="path28" />
+    </g>
+  </g>
+  <g
+     stroke-linecap="round"
+     id="g46">
+    <g
+       transform="translate(224 53) rotate(0 23.93637315817176 -0.08220144453562739)"
+       id="g36">
+      <path
+         d="M-0.94 0.78 C7.31 0.84, 40.33 0.88, 48.81 0.76 M0.77 0.15 C8.9 -0.18, 39.6 -1.18, 47.76 -0.97"
+         stroke="#000000"
+         stroke-width="1"
+         fill="none"
+         id="path34" />
+    </g>
+    <g
+       transform="translate(224 53) rotate(0 23.93637315817176 -0.08220144453562739)"
+       id="g40">
+      <path
+         d="M26.1 7.26 C31.63 7.29, 36.08 3.19, 46.2 0.95 M24.11 7.9 C29.53 5.28, 34.91 4.78, 47.47 -1.17"
+         stroke="#000000"
+         stroke-width="1"
+         fill="none"
+         id="path38" />
+    </g>
+    <g
+       transform="translate(224 53) rotate(0 23.93637315817176 -0.08220144453562739)"
+       id="g44">
+      <path
+         d="M25.98 -9.5 C31.6 -5.38, 36.07 -5.38, 46.2 0.95 M23.99 -8.85 C29.47 -7.73, 34.87 -4.48, 47.47 -1.17"
+         stroke="#000000"
+         stroke-width="1"
+         fill="none"
+         id="path42" />
+    </g>
+  </g>
+  <g
+     transform="translate(15 33.5) rotate(0 29 11.5)"
+     id="g50">
+    <text
+       x="0"
+       y="17"
+       font-family="Virgil, Segoe UI Emoji"
+       font-size="20px"
+       fill="#000000"
+       text-anchor="start"
+       style="white-space: pre;"
+       direction="ltr"
+       id="text48">Font1</text>
+  </g>
+  <g
+     transform="translate(149 38) rotate(0 30 11.5)"
+     id="g54">
+    <text
+       x="30"
+       y="17"
+       font-family="Virgil, Segoe UI Emoji"
+       font-size="20px"
+       fill="#000000"
+       text-anchor="middle"
+       style="white-space: pre;"
+       direction="ltr"
+       id="text52">Test</text>
+  </g>
+  <rect
+     style="fill:url(#linearGradient935);stroke-width:0.5;fill-opacity:1"
+     id="rect897"
+     width="75.360001"
+     height="54.84"
+     x="275.81"
+     y="21.049999" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+     x="283.6629"
+     y="41.68523"
+     id="text1481"><tspan
+       sodipodi:role="line"
+       id="tspan1479"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.5"
+       x="283.6629"
+       y="41.68523">Inscape </tspan><tspan
+       sodipodi:role="line"
+       style="font-style:italic;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:14.6667px;font-family:'Avenir Next';-inkscape-font-specification:'Avenir Next, Bold Italic';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;stroke-width:0.5"
+       x="283.6629"
+       y="66.685234"
+       id="tspan1483">font</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-weight:normal;font-size:20px;line-height:1.25;font-family:sans-serif;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.5"
+     x="340.59885"
+     y="120.98884"
+     id="text3803"><tspan
+       sodipodi:role="line"
+       id="tspan3801"
+       style="stroke-width:0.5"
+       x="340.59885"
+       y="120.98884" /></text>
+</svg>

@@ -3,7 +3,7 @@
 > From [Gilles Castel: How I draw figures for my mathematical lecture notes using Inkscape](https://castel.dev/post/lecture-notes-2/):  If you want to try this out for yourself, you can find both my [script for managing figures in Vim](https://github.com/gillescastel/inkscape-figures) and my [Inkscape shortcut manager](https://github.com/gillescastel/inkscape-shortcut-manager)
 > on Github. The first script should work out of the box on both Mac and Linux-based systems; the second only works on Linux (it uses Xlib) and is a bit harder to set up.
 
-However, this only works on Linux+Vim, I find a Repo transfering the flow from Linux to macOS: [sleepymalc/VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape).
+However, this only works on Linux+Vim, I find a Repo transfering the flow from Linux to macOS: [sleepymalc/VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape) `<span id="context_snippet">` using "Context".
 
 # Step One: inscape-figures
 
@@ -31,5 +31,26 @@ From “[sleepymalc](https://github.com/sleepymalc)/[VSCode-LaTeX-Inkscape](http
 Stay tuned.
 
 # Misc
-
+## 1. Problem of snippet (To be resolved)
 Try to get familiar with HyperSnippets extension to solve the auto completion in non mathetical environment.
+
+> One thing to consider when writing these snippets is, ‘will these snippets collide with usual text?’ For example, according to my dictionary, there are about 72 words in English and 2000 words in Dutch that contain  **`sr`**, which means that while I’m typing the word **`disregard`**, the **`sr`** would expand to **`^2`**, giving me **`di^2egard`**.
+>
+> The solution to this problem is adding a **context** to snippets. Using the syntax highlighting of Vim, it can be determined whether or not UltiSnips should expand the snippet depending if you’re in math or text. Add the following to the top of your snippets file:
+> [How I&#39;m able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/#context) [#Context](#context_snippet)
+## 2. Excalidraw.com integration
+   [Excalidraw.com](https://excalidraw.com) can draw and export **.svg** figures, so:
+
+   1. Draw figures in Excalidraw, and export as **svg**.
+   2. Copy figures into kTestNote/Figures. The ```inscape-figures watch``` will monitor the figures and invoke Inkscape to generate **pdf_tex** and **pdf**.
+   3. Use ```ctrl+i e``` to invoke ```Inscape-figures edit``` to edit the figures in Inkscape(like adding some text, mathmatic formula, etc.), taking the advantage of its pdf_tex pros.
+   4. Add code below to kTestNote.tex and build the it.
+      ```latex
+      \begin{figure}[H]
+         \centering
+         \incfig{font_test_of_excalidraw_svg_in_inkscape}
+         \caption{Reedit Excalidraw svg in Inkscape}
+         \label{fig:font_test_of_excalidraw_svg_in_inkscape}
+      \end{figure}
+      ```
+

@@ -112,7 +112,7 @@
     },
     {
         // "key": "ctrl+f",
-        "key": "ctrl+i e",  // inscape edit
+        "key": "ctrl+i e",  // inkscape edit
         "command": "command-runner.run",
         "args": {
             "command": "inkscapeEdit",
@@ -127,7 +127,7 @@
     },
     {
         // "key": "ctrl+f", // avoid ctrl+f conflict with that in vim mode
-        "key": "ctrl+i w",  // inscape starts watch
+        "key": "ctrl+i w",  // inkscape starts watch
         "command": "command-runner.run",
         "args": {
             "command": "inkscapeStart",

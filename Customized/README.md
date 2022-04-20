@@ -1,3 +1,20 @@
+Table of Contents
+=================
+
+- [Table of Contents](#table-of-contents)
+- [Two steps to make it work](#two-steps-to-make-it-work)
+  - [Step One: inscape-figures](#step-one-inscape-figures)
+    - [Usage of "vscode + inkscape-figures"](#usage-of-vscode--inkscape-figures)
+  - [Step Two: inkscape shortcut manager](#step-two-inkscape-shortcut-manager)
+- [Misc](#misc)
+  - [1. Problem of snippet](#1-problem-of-snippet)
+  - [2. Excalidraw.com integration](#2-excalidrawcom-integration)
+  - [3. Excel tables integration](#3-excel-tables-integration)
+  - [4. For whom not familiar with latex commands for math formula](#4-for-whom-not-familiar-with-latex-commands-for-math-formula)
+  - [5. Correcting spelling mistakes on the fly](#5-correcting-spelling-mistakes-on-the-fly)
+- [Credits](#credits)
+- [Related Projects](#related-projects)
+
 # Two steps to make it work
 
 > From [Gilles Castel: How I draw figures for my mathematical lecture notes using Inkscape](https://castel.dev/post/lecture-notes-2/):  If you want to try this out for yourself, you can find both my [script for managing figures in Vim](https://github.com/gillescastel/inkscape-figures) and my [Inkscape shortcut manager](https://github.com/gillescastel/inkscape-shortcut-manager)
@@ -9,18 +26,19 @@ However, this only works on Linux+Vim, I find a Repo transfering the flow from L
 
 **Done**.
 
-### Usage
+### Usage of "vscode + inkscape-figures"
 
-1. Specify a note project folder, modify the project path to the note folder in setting.json. It must have a folder called "Figures". Keys in steps below must be invoked when cursor is in a tex file.
-2. ``ctrl+i w``: Invoke inkscape-figures watch (fswatch is actually used) to watch the note project folder, in case that **.svg** is generated without **.pdf** and **.pdf_tex**. This will  monitor the folder and generate them.
-3. ``ctrl+i c``: Automatically create inkscape document and insert the figures in a note tex file.
+1. Specify a note project folder, modify the project path to the note folder in *setting.json*. It should have a folder called "*Figures*". Keys in steps below will be triggered when the cursor is in a tex file.
+2. ```ctrl+i w```: Trigger ```inkscape-figures watch``` (*fswatch* is actually used) to watch the note project folder, in case that **.svg** is generated without **.pdf** and **.pdf_tex**. This will  monitor the folder and generate them.
+3. ```ctrl+i c```: Automatically create inkscape document and insert the figures in a note tex file.
    It does:
    1) Copy the content under cursor (normally the figure name) into your clipboard.
-   2) Delete that copied content and insert a snippet defined in latex.json (defined in vscode->user.snippets->latex.code-snippets).
-   3) Lastly, send a command in a terminal by command runner, with the command ``inkscapeCreate`` (defined in vscode setting.json). This command will open a new document with name specified in 1) and insert snippet for figures in the tex file.
-   4) Draw pictures in inkscape and save the project (command+s), and rename the caption in the note tex file.
+   2) Delete that copied content and insert a snippet defined in latex.json (defined in *vscode->user.snippets->latex.code-snippets*).
+   3) Lastly, send a command in a terminal by "*command runner*", with the command ```inkscapeCreate``` (defined in *vscode setting.json*). This command will open a new document with name specified in 1) and insert snippet for figures in the tex file.
+   4) Draw pictures in inkscape and save the project (*command+s*), and rename the caption in the note tex file.
    5) Rebuild tex and check the pdf updated to see the effect.
-4. ``ctrl+i e``: Open the figures (with ''choose'') again to modified them as needed later.
+4. ```ctrl+i e```: Open the figures (with "*choose*") again to modified them as needed later, corresponding to ```inkscapeEdit```.
+5. ```ctrl+i s```: Stop the ``inkscape-figures watch``.
 
 ## Step Two: inkscape shortcut manager
 
@@ -31,7 +49,6 @@ From “[sleepymalc](https://github.com/sleepymalc)/[VSCode-LaTeX-Inkscape](http
 Stay tuned.
 
 # Misc
-
 ## 1. Problem of snippet
 
 Try to get familiar with HyperSnippets extension to solve the auto completion in non mathetical environment.
@@ -41,17 +58,17 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
 > The solution to this problem is adding a **context** to snippets. Using the syntax highlighting of Vim, it can be determined whether or not UltiSnips should expand the snippet depending if you’re in math or text. Add the following to the top of your snippets file:
 > [How I&#39;m able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/#context)#Context.
 
-**Done** with ``sleepymalc/VSCode-LaTeX-Inkscape``'s latex.hsnips.
-**See** also ``OrangeX4/hsnips``'s hsnips.
+**Done** with ```sleepymalc/VSCode-LaTeX-Inkscape```'s latex.hsnips.
+**See** also ```OrangeX4/hsnips```'s hsnips.
 
 ## 2. Excalidraw.com integration
 
 [Excalidraw.com](https://excalidraw.com) can draw and export **.svg** figures, so:
 
 1. Draw figures in Excalidraw, and export as **svg**.
-2. Copy figures into kTestNote/Figures. The ``inscape-figures watch`` will monitor the figures and invoke Inkscape to generate **pdf_tex** and **pdf**.
-3. Use ``ctrl+i e`` to invoke ``Inscape-figures edit`` to edit the figures in Inkscape(like adding some text, mathmatic formula, etc.), taking the advantage of its pdf_tex pros.
-4. Add or modify code below to kTestNote.tex and build the it.
+2. Copy figures into kTestNote/Figures. The ```inscape-figures watch``` will monitor the figures and trigger Inkscape to generate **pdf_tex** and **pdf**.
+3. Use ```ctrl+i e``` to trigger ```Inscape-figures edit``` to edit the figures in Inkscape(like adding some text, mathmatic formula, etc.), taking the advantage of its pdf_tex pros.
+4. Add or modify code below to kTestNote.tex and rebuild it.
    ```latex
    \begin{figure}[H]
       \centering
@@ -69,19 +86,19 @@ Like Inkscpae, we can add some supports for tables.
 
 Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivankokan/Excel2LaTeX) add-in:
 
-1. The tables can be drawn with hand in Excel: ``Home->Draw outside border->Draw border``.
-2. Export LaTeX code by **Excel2LaTeX**.
-3. Paste in kTestNote.tex, using packages: ``booktabs and multirow``.
-4. Manually add diagbox needed, since Excel2LaTeC cannot export diagonal line, using package ``diagbox``
+1. The tables can be drawn with hand in Excel: *Home->Draw outside border->Draw border*.
+2. Export LaTeX code by "**Excel2LaTeX**".
+3. Paste in kTestNote.tex, using packages: "**booktabs**" and "**multirow**".
+4. Manually add diagbox needed, since Excel2LaTeC cannot export diagonal line, using package "**diagbox**".
 
 **ps.**:
 
 1. Typora can also export Excel tables, however, unsatisfactory.
 2. We can also draw tables using: [LaTeX-Tables](https://www.latex-tables.com) and [Tables-Generator](https://www.tablesgenerator.com/latex_tables).
 
-## 4. For whom not familiar with commands for math formula
+## 4. For whom not familiar with latex commands for math formula
 
-``Mathpix`` ``EquationMaker`` ``Detexify`` ``Mathkey`` ``Mathcha`` ``Quiver``
+```Mathpix``` ```EquationMaker``` ```Detexify``` ```Mathkey``` ```Mathcha``` ```Quiver```
 
 <span style="white-space: nowrap">
 <img src="https://mathpix.com/images/logo/image-logo.png" width="48">

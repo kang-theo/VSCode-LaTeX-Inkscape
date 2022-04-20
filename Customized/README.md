@@ -39,6 +39,9 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
 > The solution to this problem is adding a **context** to snippets. Using the syntax highlighting of Vim, it can be determined whether or not UltiSnips should expand the snippet depending if you’re in math or text. Add the following to the top of your snippets file:
 > [How I&#39;m able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/#context)#Context.
 
+**Done** with ```sleepymalc/VSCode-LaTeX-Inkscape```'s latex.hsnips.
+**See** also ```OrangeX4/hsnips```'s hsnips.
+
 ## 2. Excalidraw.com integration
 [Excalidraw.com](https://excalidraw.com) can draw and export **.svg** figures, so:
 
@@ -77,3 +80,6 @@ ps.
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHtkytJ85bF9V6v2lTpoXoqcI8JVjlW2KLhLrHgeCEma6uKsyo_aOnNxaczNr5Zz6CPdo&usqp=CAU" width="48">
 <img src="https://www.mathcha.io/image/notebook-icon.png" width="48">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rMHnsUB1YwfZkaSaac7E75_xsjqGK0BYFrLy0XHf3etrOTgGxgBbdHHU7fkoL2zIz0I&usqp=CAU" width="48">
+
+## 5. Correcting spelling mistakes on the fly
+Todo.

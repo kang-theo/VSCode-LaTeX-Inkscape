@@ -83,12 +83,14 @@ Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivanko
 
 ``Mathpix`` ``EquationMaker`` ``Detexify`` ``Mathkey`` ``Mathcha`` ``Quiver``
 
-<img src="https://mathpix.com/images/logo/image-logo.png" width="48"><nobr>
+<span style="white-space: nowrap">
+<img src="https://mathpix.com/images/logo/image-logo.png" width="48">
 <img src="https://static.macupdate.com/products/50374/m/equation-maker-logo.png?v=1574176973" width="48">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt9b_RvPnFyzuoFPaycQGR46ciRmi11r1FEQ&usqp=CAU" width="48">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHtkytJ85bF9V6v2lTpoXoqcI8JVjlW2KLhLrHgeCEma6uKsyo_aOnNxaczNr5Zz6CPdo&usqp=CAU" width="48">
 <img src="https://www.mathcha.io/image/notebook-icon.png" width="48">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rMHnsUB1YwfZkaSaac7E75_xsjqGK0BYFrLy0XHf3etrOTgGxgBbdHHU7fkoL2zIz0I&usqp=CAU" width="48">
+</span>
 
 ## 5. Correcting spelling mistakes on the fly
 Todo.

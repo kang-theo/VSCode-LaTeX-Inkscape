@@ -22,6 +22,8 @@
         "inkscapeCreate": "inkscape-figures create ${selectedText} ${workspaceFolder}/Customized/kTestNote/Figures/",
         "inkscapeEdit": "inkscape-figures edit ${workspaceFolder}/Customized/kTestNote/Figures/",
         "inkscapeStart": "inkscape-figures watch",
+        "inkscapeStopFswatch": "kill `ps -ef | grep 'fswatch' | grep -v grep | awk '{print $2}'`",
+        "inkscapeStopInkscape_figures_watch": "kill `ps -ef | grep 'inkscape-figures watch' | grep -v grep | awk '{print $2}'`",
 
         // 1. quiver local environment
         // "quiver": "open -na 'Google Chrome' --args --new-window <path-to-quiver>/quiver/src/index.html"

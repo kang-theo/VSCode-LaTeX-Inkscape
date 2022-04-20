@@ -66,7 +66,6 @@
 
     //-------------------------------------------------------------------------------------------------------------
     // Inkscape setup
-    {
         // Usage:
         // 1. Specify a note project folder, modify the project path to the note folder in setting.json. It must have a folder called "Figures". Keys in steps below must be invoked when cursor is in a tex file.
         // 2. "ctrl+i w": Invoke inkscape-figures watch (fswatch is actually used) to watch the note project folder, in case that .svg is generated without .pdf and .pdf_tex. This will monitor the folder and generate them.
@@ -79,6 +78,7 @@
         //                      5) Rebuild tex and check the pdf updated to see the effect.
         // 4. "ctrl+i e": Open the figures (with ''choose'') again to modified them as needed later.
 
+    {
         // "key": "ctrl+f",
         "key": "ctrl+i c",
         //command run + multi-command
@@ -98,7 +98,7 @@
                 {
                     "command": "command-runner.run",
                     "args": {
-                        "command": "inkscapeCreate",
+                        "command": "inkscapeCreate"
                     },
                     "terminal": {
                         "name": "runCommand",
@@ -142,49 +142,83 @@
         // "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Visual'"
         "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Normal'"
     },
-        {
-            // "key": "ctrl+c",
-            "key": "ctrl+i q",
-            "command": "command-runner.run",
-            "args": {
-                "command": "quiver",
-                "terminal": {
-                    "name": "runCommand",
-                    "shellArgs": [],
-                    "autoClear": true,
-                    "autoFocus": false
+    {
+        "key": "ctrl+i s",  // inkscape stop watch
+        //command run + multi-command
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                {
+                    "command": "command-runner.run",
+                    "args": {
+                        "command": "inkscapeStopFswatch"
+                    },
+                    "terminal": {
+                        "name": "runCommand",
+                        "shellArgs": [],
+                        "autoClear": true,
+                        "autoFocus": false
+                    }
+                },
+                {
+                    "command": "command-runner.run",
+                    "args": {
+                        "command": "inkscapeStopInkscape_figures_watch"
+                    },
+                    "terminal": {
+                        "name": "runCommand",
+                        "shellArgs": [],
+                        "autoClear": true,
+                        "autoFocus": false
+                    }
                 }
-            },
-            "when": "editorTextFocus"
+            ]
         },
-        {
-            "key": "ctrl+i d",
-            "command": "command-runner.run",
-            "args": {
-                "command": "excalidraw",
-                "terminal": {
-                    "name": "runCommand",
-                    "shellArgs": [],
-                    "autoClear": true,
-                    "autoFocus": false
-                }
-            },
-            "when": "editorTextFocus"
+        "when": "editorTextFocus && vim.active && vim.use<C-i> && !inDebugRepl && vim.mode == 'Normal'"
+    },
+    {
+        // "key": "ctrl+c",
+        "key": "ctrl+i q",
+        "command": "command-runner.run",
+        "args": {
+            "command": "quiver",
+            "terminal": {
+                "name": "runCommand",
+                "shellArgs": [],
+                "autoClear": true,
+                "autoFocus": false
+            }
         },
-        {
-            // "key": "ctrl+c",
-            "key": "ctrl+i m",
-            "command": "command-runner.run",
-            "args": {
-                "command": "excel",
-                "terminal": {
-                    "name": "runCommand",
-                    "shellArgs": [],
-                    "autoClear": true,
-                    "autoFocus": false
-                }
-            },
-            "when": "editorTextFocus"
-        }
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "ctrl+i d",
+        "command": "command-runner.run",
+        "args": {
+            "command": "excalidraw",
+            "terminal": {
+                "name": "runCommand",
+                "shellArgs": [],
+                "autoClear": true,
+                "autoFocus": false
+            }
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        // "key": "ctrl+c",
+        "key": "ctrl+i m",
+        "command": "command-runner.run",
+        "args": {
+            "command": "excel",
+            "terminal": {
+                "name": "runCommand",
+                "shellArgs": [],
+                "autoClear": true,
+                "autoFocus": false
+            }
+        },
+        "when": "editorTextFocus"
+    }
     //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 ]

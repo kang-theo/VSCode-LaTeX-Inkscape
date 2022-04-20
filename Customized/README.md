@@ -24,7 +24,7 @@ However, this only works on Linux+Vim, I find a Repo transfering the flow from L
 
 ## Step One: inscape-figures
 
-**Done**.
+- [x] **Done**.
 
 ### Usage of "vscode + inkscape-figures"
 
@@ -42,7 +42,7 @@ However, this only works on Linux+Vim, I find a Repo transfering the flow from L
 
 ## Step Two: inkscape shortcut manager
 
-**Todo**.
+- [ ] **Todo**.
 
 From “[sleepymalc](https://github.com/sleepymalc)/[VSCode-LaTeX-Inkscape](https://github.com/sleepymalc/VSCode-LaTeX-Inkscape)”: After some research, although there is a way to let the original script in [inkscape-shortcut-manager](https://github.com/gillescastel/inkscape-shortcut-manager) run correctly since it depends on **xlib**, which is no longer used by macOS for almost every application(including Inkscape, as expected). Hence, the only thing I can do now is to give up. In a perceivable future, if I have time to find an alternative way to interrupt the window activity in macOS, I'll try to configure it for macOS.
 
@@ -58,8 +58,7 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
 > The solution to this problem is adding a **context** to snippets. Using the syntax highlighting of Vim, it can be determined whether or not UltiSnips should expand the snippet depending if you’re in math or text. Add the following to the top of your snippets file:
 > [How I&#39;m able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/#context)#Context.
 
-**Done** with ```sleepymalc/VSCode-LaTeX-Inkscape```'s latex.hsnips.
-**See** also ```OrangeX4/hsnips```'s hsnips.
+- [x] **Done** with ```sleepymalc/VSCode-LaTeX-Inkscape```'s latex.hsnips. **See** also ```OrangeX4/hsnips```'s hsnips.
 
 ## 2. Excalidraw.com integration
 
@@ -110,7 +109,7 @@ Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivanko
 </span>
 
 ## 5. Correcting spelling mistakes on the fly
-Todo.
+- [ ] **Todo**.
 
 # Credits
 

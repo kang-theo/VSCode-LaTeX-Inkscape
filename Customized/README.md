@@ -53,4 +53,26 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
          \label{fig:font_test_of_excalidraw_svg_in_inkscape}
       \end{figure}
       ```
+## 3. Excel tables integration
+Like Inkscpae, we can add some support for tables.
+> Automation work still need to be done.
 
+Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivankokan/Excel2LaTeX) add-in:
+1. The tables can be drawn with hand in Excel: ```Home->Draw outside border->Draw border```.
+2. Export LaTeX code by **Excel2LaTeX**.
+3. Paste in kTestNote.tex, using packages: ```booktabs and multirow```.
+4. Manually add diagbox needed, since Excel2LaTeC cannot export slant line, using package ```diagbox```
+
+ps.
+1. Typora can also export Excel tables, however, unsatisfactory.
+2. We can also draw tables using: [LaTeX-Tables](https://www.latex-tables.com) and [Tables-Generator](https://www.tablesgenerator.com/latex_tables).
+
+## 4. For whom not familiar with commands for math formula
+```Mathpix``` ```EquationMaker``` ```Detexify``` ```Mathkey``` ```Mathcha``` ```Quiver```
+
+<img src="https://mathpix.com/images/logo/image-logo.png" width="48">
+<img src="https://static.macupdate.com/products/50374/m/equation-maker-logo.png?v=1574176973" width="48">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt9b_RvPnFyzuoFPaycQGR46ciRmi11r1FEQ&usqp=CAU" width="48">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSHtkytJ85bF9V6v2lTpoXoqcI8JVjlW2KLhLrHgeCEma6uKsyo_aOnNxaczNr5Zz6CPdo&usqp=CAU" width="48">
+<img src="https://www.mathcha.io/image/notebook-icon.png" width="48">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rMHnsUB1YwfZkaSaac7E75_xsjqGK0BYFrLy0XHf3etrOTgGxgBbdHHU7fkoL2zIz0I&usqp=CAU" width="48">

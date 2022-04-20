@@ -90,6 +90,9 @@ ps.
 <img src="https://www.mathcha.io/image/notebook-icon.png" width="48">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rMHnsUB1YwfZkaSaac7E75_xsjqGK0BYFrLy0XHf3etrOTgGxgBbdHHU7fkoL2zIz0I&usqp=CAU" width="48">
 
+## 5. Correcting spelling mistakes on the fly
+Todo.
+
 # Credits
 
 Thanks to **Gilles Castel** and **Pingbang Hu** for their inspiring work. Hope the workflow can become popular.

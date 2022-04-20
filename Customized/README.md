@@ -31,7 +31,9 @@ From “[sleepymalc](https://github.com/sleepymalc)/[VSCode-LaTeX-Inkscape](http
 Stay tuned.
 
 # Misc
-## 1. Problem of snippet (To be resolved)
+
+## 1. Problem of snippet
+
 Try to get familiar with HyperSnippets extension to solve the auto completion in non mathetical environment.
 
 > One thing to consider when writing these snippets is, ‘will these snippets collide with usual text?’ For example, according to my dictionary, there are about 72 words in English and 2000 words in Dutch that contain  **`sr`**, which means that while I’m typing the word **`disregard`**, the **`sr`** would expand to **`^2`**, giving me **`di^2egard`**.
@@ -39,15 +41,16 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
 > The solution to this problem is adding a **context** to snippets. Using the syntax highlighting of Vim, it can be determined whether or not UltiSnips should expand the snippet depending if you’re in math or text. Add the following to the top of your snippets file:
 > [How I&#39;m able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/#context)#Context.
 
-**Done** with ```sleepymalc/VSCode-LaTeX-Inkscape```'s latex.hsnips.
-**See** also ```OrangeX4/hsnips```'s hsnips.
+**Done** with ``sleepymalc/VSCode-LaTeX-Inkscape``'s latex.hsnips.
+**See** also ``OrangeX4/hsnips``'s hsnips.
 
 ## 2. Excalidraw.com integration
+
 [Excalidraw.com](https://excalidraw.com) can draw and export **.svg** figures, so:
 
 1. Draw figures in Excalidraw, and export as **svg**.
-2. Copy figures into kTestNote/Figures. The ```inscape-figures watch``` will monitor the figures and invoke Inkscape to generate **pdf_tex** and **pdf**.
-3. Use ```ctrl+i e``` to invoke ```Inscape-figures edit``` to edit the figures in Inkscape(like adding some text, mathmatic formula, etc.), taking the advantage of its pdf_tex pros.
+2. Copy figures into kTestNote/Figures. The ``inscape-figures watch`` will monitor the figures and invoke Inkscape to generate **pdf_tex** and **pdf**.
+3. Use ``ctrl+i e`` to invoke ``Inscape-figures edit`` to edit the figures in Inkscape(like adding some text, mathmatic formula, etc.), taking the advantage of its pdf_tex pros.
 4. Add code below to kTestNote.tex and build the it.
    ```latex
    \begin{figure}[H]
@@ -57,22 +60,28 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
       \label{fig:font_test_of_excalidraw_svg_in_inkscape}
    \end{figure}
    ```
+
 ## 3. Excel tables integration
+
 Like Inkscpae, we can add some support for tables.
+
 > Automation work still need to be done.
 
 Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivankokan/Excel2LaTeX) add-in:
-1. The tables can be drawn with hand in Excel: ```Home->Draw outside border->Draw border```.
+
+1. The tables can be drawn with hand in Excel: ``Home->Draw outside border->Draw border``.
 2. Export LaTeX code by **Excel2LaTeX**.
-3. Paste in kTestNote.tex, using packages: ```booktabs and multirow```.
-4. Manually add diagbox needed, since Excel2LaTeC cannot export slant line, using package ```diagbox```
+3. Paste in kTestNote.tex, using packages: ``booktabs and multirow``.
+4. Manually add diagbox needed, since Excel2LaTeC cannot export slant line, using package ``diagbox``
 
 ps.
+
 1. Typora can also export Excel tables, however, unsatisfactory.
 2. We can also draw tables using: [LaTeX-Tables](https://www.latex-tables.com) and [Tables-Generator](https://www.tablesgenerator.com/latex_tables).
 
 ## 4. For whom not familiar with commands for math formula
-```Mathpix``` ```EquationMaker``` ```Detexify``` ```Mathkey``` ```Mathcha``` ```Quiver```
+
+``Mathpix`` ``EquationMaker`` ``Detexify`` ``Mathkey`` ``Mathcha`` ``Quiver``
 
 <img src="https://mathpix.com/images/logo/image-logo.png" width="48"><nobr>
 <img src="https://static.macupdate.com/products/50374/m/equation-maker-logo.png?v=1574176973" width="48">
@@ -81,5 +90,8 @@ ps.
 <img src="https://www.mathcha.io/image/notebook-icon.png" width="48">
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rMHnsUB1YwfZkaSaac7E75_xsjqGK0BYFrLy0XHf3etrOTgGxgBbdHHU7fkoL2zIz0I&usqp=CAU" width="48">
 
-## 5. Correcting spelling mistakes on the fly
-Todo.
+## 
+<nobr>5. Correcting spelling mistakes on the fly</nobr>
+
+
+<nobr><b>Todo</b>.</nobr>

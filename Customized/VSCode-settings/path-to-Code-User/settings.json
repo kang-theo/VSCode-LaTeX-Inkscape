@@ -21,9 +21,16 @@
         // 2. For notes folder is a subfolder of a project:
         "inkscapeCreate": "inkscape-figures create ${selectedText} ${workspaceFolder}/Customized/kTestNote/Figures/",
         "inkscapeEdit": "inkscape-figures edit ${workspaceFolder}/Customized/kTestNote/Figures/",
-
         "inkscapeStart": "inkscape-figures watch",
-        "quiver": "open -na 'Google Chrome' --args --new-window <path-to-quiver>/quiver/src/index.html"
+
+        // 1. quiver local environment
+        // "quiver": "open -na 'Google Chrome' --args --new-window <path-to-quiver>/quiver/src/index.html"
+        // 2. quiver online
+        "quiver": "open -na 'Google Chrome' --args --new-window https://q.uiver.app/",
+
+        "excalidraw": "open -na 'Google Chrome' --args --new-window https://excalidraw.com",
+
+        "excel": "open -a 'Microsoft Excel'"
     },
     //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 }

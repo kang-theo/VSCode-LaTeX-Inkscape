@@ -141,20 +141,49 @@
         // "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Visual'"
         "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Normal'"
     },
-    {
-        // "key": "ctrl+c",
-        "key": "ctrl+q c",  // open quiver in chrome, to be tested
-        "command": "command-runner.run",
-        "args": {
-            "command": "quiver",
-            "terminal": {
-                "name": "runCommand",
-                "shellArgs": [],
-                "autoClear": true,
-                "autoFocus": false
-            }
+        {
+            // "key": "ctrl+c",
+            "key": "ctrl+i q",
+            "command": "command-runner.run",
+            "args": {
+                "command": "quiver",
+                "terminal": {
+                    "name": "runCommand",
+                    "shellArgs": [],
+                    "autoClear": true,
+                    "autoFocus": false
+                }
+            },
+            "when": "editorTextFocus"
         },
-        "when": "editorTextFocus"
-    }
+        {
+            "key": "ctrl+i d",
+            "command": "command-runner.run",
+            "args": {
+                "command": "excalidraw",
+                "terminal": {
+                    "name": "runCommand",
+                    "shellArgs": [],
+                    "autoClear": true,
+                    "autoFocus": false
+                }
+            },
+            "when": "editorTextFocus"
+        },
+        {
+            // "key": "ctrl+c",
+            "key": "ctrl+i m",
+            "command": "command-runner.run",
+            "args": {
+                "command": "excel",
+                "terminal": {
+                    "name": "runCommand",
+                    "shellArgs": [],
+                    "autoClear": true,
+                    "autoFocus": false
+                }
+            },
+            "when": "editorTextFocus"
+        }
     //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 ]

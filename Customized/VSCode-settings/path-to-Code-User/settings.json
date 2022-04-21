@@ -3,7 +3,7 @@
         //https://www.pbb.wtf/posts/LaTeX-Inkscape
         //https://github.com/sleepymalc/VSCode-LaTeX-Inkscape/blob/main/README.md
         //https://github.com/gillescastel/inkscape-figures
-        //https://github.com/gillescastel/inkscape-shortcut-manager
+        //https: //github.com/gillescastel/inkscape-shortcut-manager
         //https://github.com/gillescastel/lecture-notes
 
     // Auto Correction setup
@@ -22,8 +22,7 @@
         "inkscapeCreate": "inkscape-figures create ${selectedText} ${workspaceFolder}/Customized/kTestNote/Figures/",
         "inkscapeEdit": "inkscape-figures edit ${workspaceFolder}/Customized/kTestNote/Figures/",
         "inkscapeStart": "inkscape-figures watch",
-        "inkscapeStopFswatch": "kill `ps -ef | grep 'fswatch' | grep -v grep | awk '{print $2}'`",
-        "inkscapeStopInkscape_figures_watch": "kill `ps -ef | grep 'inkscape-figures watch' | grep -v grep | awk '{print $2}'`",
+        "inkscapeStop": "kill `ps -ef | grep 'fswatch' | grep -v grep | awk '{print $2}'` && kill `ps -ef | grep 'inkscape-figures watch' | grep -v grep | awk '{print $2}'`",
 
         // 1. quiver local environment
         // "quiver": "open -na 'Google Chrome' --args --new-window <path-to-quiver>/quiver/src/index.html"
@@ -34,7 +33,7 @@
 
         "excel": "cd ${workspaceFolder}/Tex/How_I_am_able_to_take_notes_in_mathematics_lectures_using_LaTeX/KNotes/kTestNote/Figures/ && cp Templates/Excel.xlsx `pbpaste`.xlsx  && open -a 'Microsoft Excel' `pbpaste`.xlsx",
 
-        // "xmind": "cd ${workspaceFolder}/Tex/How_I_am_able_to_take_notes_in_mathematics_lectures_using_LaTeX/KNotes/kTestNote/Figures/ && cp Templates/Excel.xlsx `pbpaste`.xlsx  && open -a 'Microsoft Excel' `pbpaste`.xlsx"
+        "xmind": "cd ${workspaceFolder}/Tex/How_I_am_able_to_take_notes_in_mathematics_lectures_using_LaTeX/KNotes/kTestNote/Figures/ && cp Templates/XMind.xmind `pbpaste`.xmind  && open -a 'XMind' `pbpaste`.xmind"
     },
     //b. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 }

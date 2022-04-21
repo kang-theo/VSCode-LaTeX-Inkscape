@@ -81,7 +81,7 @@
 
     {
         // "key": "ctrl+f",
-        "key": "ctrl+i c",
+        "key": "ctrl+i c",  //inkscape create
         //command run + multi-command
         "command": "extension.multiCommand.execute",
         "args": {
@@ -152,19 +152,7 @@
                 {
                     "command": "command-runner.run",
                     "args": {
-                        "command": "inkscapeStopFswatch"
-                    },
-                    "terminal": {
-                        "name": "runCommand",
-                        "shellArgs": [],
-                        "autoClear": true,
-                        "autoFocus": false
-                    }
-                },
-                {
-                    "command": "command-runner.run",
-                    "args": {
-                        "command": "inkscapeStopInkscape_figures_watch"
+                        "command": "inkscapeStop"
                     },
                     "terminal": {
                         "name": "runCommand",
@@ -179,7 +167,7 @@
     },
     {
         // "key": "ctrl+c",
-        "key": "ctrl+i q",  
+        "key": "ctrl+i q",  // LaTeX Quiver math
         "command": "command-runner.run",
         "args": {
             "command": "quiver",
@@ -193,7 +181,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+i d",  
+        "key": "ctrl+i d",  //Excalidraw diagram  
         "command": "command-runner.run",
         "args": {
             "command": "excalidraw",
@@ -207,7 +195,7 @@
         "when": "editorTextFocus"
     },
     {
-        "key": "ctrl+i m",
+        "key": "ctrl+i m",  //Microsoft Excel table
         //command run + multi-command
         "command": "extension.multiCommand.execute",
         "args": {
@@ -226,6 +214,38 @@
                     "command": "command-runner.run",
                     "args": {
                         "command": "excel",
+                    },
+                    "terminal": {
+                        "name": "runCommand",
+                        "shellArgs": [],
+                        "autoClear": true,
+                        "autoFocus": false
+                    }
+                },
+            ]
+        },
+        "when": "editorTextFocus && vim.active && vim.use<C-f> && !inDebugRepl && vim.mode == 'Insert'"
+    },
+    {
+        "key": "ctrl+i x",  // XMind mindmap
+        //command run + multi-command
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "editor.action.clipboardCopyAction",
+                "editor.action.insertLineAfter",
+                "cursorUp",
+                "editor.action.deleteLines",
+                {
+                    "command": "editor.action.insertSnippet",
+                    "args": {
+                        "name": "incfigXMind"
+                    }
+                },
+                {
+                    "command": "command-runner.run",
+                    "args": {
+                        "command": "xmind",
                     },
                     "terminal": {
                         "name": "runCommand",

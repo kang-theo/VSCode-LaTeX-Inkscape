@@ -7,11 +7,12 @@ Table of Contents
     - [Usage of "vscode + inkscape-figures"](#usage-of-vscode--inkscape-figures)
   - [Step Two: inkscape shortcut manager](#step-two-inkscape-shortcut-manager)
 - [Misc](#misc)
-  - [1. Problem of snippet](#1-problem-of-snippet)
+  - [1. HyperSnips for math snippets](#1-hypersnips-for-math-snippets)
   - [2. Excalidraw.com integration](#2-excalidrawcom-integration)
   - [3. Excel tables integration](#3-excel-tables-integration)
-  - [4. For whom not familiar with latex commands for math formula](#4-for-whom-not-familiar-with-latex-commands-for-math-formula)
-  - [5. Correcting spelling mistakes on the fly](#5-correcting-spelling-mistakes-on-the-fly)
+  - [4. XMind mindmap integration](#4-xmind-mindmap-integration)
+  - [5. For whom not familiar with latex commands for math formula](#5-for-whom-not-familiar-with-latex-commands-for-math-formula)
+  - [6. Correcting spelling mistakes on the fly](#6-correcting-spelling-mistakes-on-the-fly)
 - [Credits](#credits)
 - [Related Projects](#related-projects)
 
@@ -49,9 +50,9 @@ From “[sleepymalc](https://github.com/sleepymalc)/[VSCode-LaTeX-Inkscape](http
 Stay tuned.
 
 # Misc
-## 1. Problem of snippet
+## 1. HyperSnips for math snippets
 
-Try to get familiar with HyperSnippets extension to solve the auto completion in non mathetical environment.
+Use "context" in HyperSnips extension to solve the auto completion in non-mathetical environment.
 
 > One thing to consider when writing these snippets is, ‘will these snippets collide with usual text?’ For example, according to my dictionary, there are about 72 words in English and 2000 words in Dutch that contain  **`sr`**, which means that while I’m typing the word **`disregard`**, the **`sr`** would expand to **`^2`**, giving me **`di^2egard`**.
 >
@@ -81,7 +82,7 @@ Try to get familiar with HyperSnippets extension to solve the auto completion in
 
 Like Inkscpae, we can add some supports for tables.
 
-- [ ] Automation work still need to be done.
+- [x] Automation work already done.
 
 Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivankokan/Excel2LaTeX) add-in:
 
@@ -89,13 +90,20 @@ Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivanko
 2. Export LaTeX code by "**Excel2LaTeX**".
 3. Paste in kTestNote.tex, using packages: "**booktabs**" and "**multirow**".
 4. Manually add diagbox needed, since Excel2LaTeC cannot export diagonal line, using package "**diagbox**".
+5. Automation: Trigger ```ctrl+i m``` to open an excel in *Figures* with a name under cursor in the tex file, and then edit the table and export it by "Excel2LaTeX" as tex code, and paste it to the tex file.
 
-**ps.**:
+**Attention**: There should be a "*Templates*" folder in "*Figures*", including self-customized temaplate for Excel.
 
-1. Typora can also export Excel tables, however, unsatisfactory.
-2. We can also draw tables using: [LaTeX-Tables](https://www.latex-tables.com) and [Tables-Generator](https://www.tablesgenerator.com/latex_tables).
+## 4. XMind mindmap integration
 
-## 4. For whom not familiar with latex commands for math formula
+Support import XMind exported **svg**.
+
+1. Trigger ```ctrl+i x``` to open an xmind file in *Figures* with a name under cursor in the tex file, and then create your mindmap and export it as **svg**.
+2. The ```inkscape-figures watch``` will monitor the **svg** creation and generate **pdf** and **pdf_tex** using "Inkscape".
+3. Rebuild your tex to see the effect.
+
+- [ ] **Todo**: The figure is not what it looks in original svg.
+## 5. For whom not familiar with latex commands for math formula
 
 ```Mathpix``` ```EquationMaker``` ```Detexify``` ```Mathkey``` ```Mathcha``` ```Quiver```
 
@@ -108,7 +116,7 @@ Create tables generated from Excel using [Excel2LaTeX](https://github.com/ivanko
 <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5rMHnsUB1YwfZkaSaac7E75_xsjqGK0BYFrLy0XHf3etrOTgGxgBbdHHU7fkoL2zIz0I&usqp=CAU" width="48">
 </span>
 
-## 5. Correcting spelling mistakes on the fly
+## 6. Correcting spelling mistakes on the fly
 - [ ] **Todo**.
 
 # Credits

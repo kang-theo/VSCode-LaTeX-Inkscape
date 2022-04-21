@@ -1,0 +1,132 @@
+%% Creator: Inkscape 1.1.2 (b8e25be8, 2022-02-05), www.inkscape.org
+%% PDF/EPS/PS + LaTeX output extension by Johan Engelen, 2010
+%% Accompanies image file 'xmind_mindmap_test.pdf' (pdf, eps, ps)
+%%
+%% To include the image in your LaTeX document, write
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics{<filename>.pdf}
+%% To scale the image, write
+%%   \def\svgwidth{<desired width>}
+%%   \input{<filename>.pdf_tex}
+%%  instead of
+%%   \includegraphics[width=<desired width>]{<filename>.pdf}
+%%
+%% Images with a different path to the parent latex file can
+%% be accessed with the `import' package (which may need to be
+%% installed) using
+%%   \usepackage{import}
+%% in the preamble, and then including the image with
+%%   \import{<path to file>}{<filename>.pdf_tex}
+%% Alternatively, one can specify
+%%   \graphicspath{{<path to file>/}}
+%% 
+%% For more information, please see info/svg-inkscape on CTAN:
+%%   http://tug.ctan.org/tex-archive/info/svg-inkscape
+%%
+\begingroup%
+  \makeatletter%
+  \providecommand\color[2][]{%
+    \errmessage{(Inkscape) Color is used for the text in Inkscape, but the package 'color.sty' is not loaded}%
+    \renewcommand\color[2][]{}%
+  }%
+  \providecommand\transparent[1]{%
+    \errmessage{(Inkscape) Transparency is used (non-zero) for the text in Inkscape, but the package 'transparent.sty' is not loaded}%
+    \renewcommand\transparent[1]{}%
+  }%
+  \providecommand\rotatebox[2]{#2}%
+  \newcommand*\fsize{\dimexpr\f@size pt\relax}%
+  \newcommand*\lineheight[1]{\fontsize{\fsize}{#1\fsize}\selectfont}%
+  \ifx\svgwidth\undefined%
+    \setlength{\unitlength}{693bp}%
+    \ifx\svgscale\undefined%
+      \relax%
+    \else%
+      \setlength{\unitlength}{\unitlength * \real{\svgscale}}%
+    \fi%
+  \else%
+    \setlength{\unitlength}{\svgwidth}%
+  \fi%
+  \global\let\svgwidth\undefined%
+  \global\let\svgscale\undefined%
+  \makeatother%
+  \begin{picture}(1,0.97077922)%
+    \lineheight{1}%
+    \setlength\tabcolsep{0pt}%
+    \put(0,0){\includegraphics[width=\unitlength,page=1]{xmind_mindmap_test.pdf}}%
+    \put(0.15620984,0.42343074){\color[rgb]{1,1,1}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{‎Get Feedback on }\textbf{‎Mobile App}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=2]{xmind_mindmap_test.pdf}}%
+    \put(0.3495671,0.70968615){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎What?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=3]{xmind_mindmap_test.pdf}}%
+    \put(0.48917749,0.89042208){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎2 goals\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=4]{xmind_mindmap_test.pdf}}%
+    \put(0.59415584,0.9099026){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎getting insight on what can be improved\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=5]{xmind_mindmap_test.pdf}}%
+    \put(0.59415584,0.87094156){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎boost app’s rating\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=6]{xmind_mindmap_test.pdf}}%
+    \put(0.48917749,0.78652597){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎users types\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=7]{xmind_mindmap_test.pdf}}%
+    \put(0.59415584,0.81574675){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎talkactive\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=8]{xmind_mindmap_test.pdf}}%
+    \put(0.71103896,0.83522727){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎provide feedbacks\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=9]{xmind_mindmap_test.pdf}}%
+    \put(0.71103896,0.79626623){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎be demanding\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=10]{xmind_mindmap_test.pdf}}%
+    \put(0.83116883,0.79626623){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎negative reviews\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=11]{xmind_mindmap_test.pdf}}%
+    \put(0.59415584,0.75730519){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎non-talkactive\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=12]{xmind_mindmap_test.pdf}}%
+    \put(0.48917749,0.68262987){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎find right time to ask for feedback\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=13]{xmind_mindmap_test.pdf}}%
+    \put(0.5487013,0.72159091){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎essential\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=14]{xmind_mindmap_test.pdf}}%
+    \put(0.48917749,0.63609307){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎feedback function \end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=15]{xmind_mindmap_test.pdf}}%
+    \put(0.65367965,0.63609307){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎integrated part of App\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=16]{xmind_mindmap_test.pdf}}%
+    \put(0.48917749,0.58955628){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎careful with pop-up strategies\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=17]{xmind_mindmap_test.pdf}}%
+    \put(0.48917749,0.55384199){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎don't ask too often/insistantly\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=18]{xmind_mindmap_test.pdf}}%
+    \put(0.3495671,0.33874459){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎How?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=19]{xmind_mindmap_test.pdf}}%
+    \put(0.47294372,0.48674242){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎Send Feedback built into the app\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=20]{xmind_mindmap_test.pdf}}%
+    \put(0.69047619,0.48674242){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎often be ignored\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=21]{xmind_mindmap_test.pdf}}%
+    \put(0.47294372,0.43154762){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎Pop-ups\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=22]{xmind_mindmap_test.pdf}}%
+    \put(0.58549784,0.45102814){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎boost app's rating\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=23]{xmind_mindmap_test.pdf}}%
+    \put(0.58549784,0.4120671){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎interrupt user experience\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=24]{xmind_mindmap_test.pdf}}%
+    \put(0.47294372,0.32602814){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎Natively integrated feedback forms\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=25]{xmind_mindmap_test.pdf}}%
+    \put(0.70238095,0.36498918){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎social\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=26]{xmind_mindmap_test.pdf}}%
+    \put(0.70238095,0.32602814){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎news\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=27]{xmind_mindmap_test.pdf}}%
+    \put(0.70238095,0.2870671){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎dating\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=28]{xmind_mindmap_test.pdf}}%
+    \put(0.8008658,0.33739177){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎app which contains‎feeds\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=29]{xmind_mindmap_test.pdf}}%
+    \put(0.83116883,0.37635281){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎perfect for\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=30]{xmind_mindmap_test.pdf}}%
+    \put(0.47294372,0.25135281){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎Instant messaging\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=31]{xmind_mindmap_test.pdf}}%
+    \put(0.61363636,0.25135281){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎fewer one-star reviews\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=32]{xmind_mindmap_test.pdf}}%
+    \put(0.47294372,0.21563853){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎Surveys\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=33]{xmind_mindmap_test.pdf}}%
+    \put(0.3495671,0.10037879){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎When?\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=34]{xmind_mindmap_test.pdf}}%
+    \put(0.48160173,0.14853896){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎accomplished an intended task within your app\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=35]{xmind_mindmap_test.pdf}}%
+    \put(0.48160173,0.11282468){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎somewhat loyal\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=36]{xmind_mindmap_test.pdf}}%
+    \put(0.48160173,0.07711039){\color[rgb]{0.28627451,0.29019608,0.2745098}\makebox(0,0)[lt]{\lineheight{1.25}\smash{\begin{tabular}[t]{l}‎App opened > 10 times/3 days\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=37]{xmind_mindmap_test.pdf}}%
+    \put(0.80489833,0.75108404){\color[rgb]{0.20784314,0.27058824,0.40392157}\makebox(0,0)[t]{\lineheight{1.25}\smash{\begin{tabular}[t]{c}\textbf{‎leads to}\end{tabular}}}}%
+    \put(0,0){\includegraphics[width=\unitlength,page=38]{xmind_mindmap_test.pdf}}%
+  \end{picture}%
+\endgroup%

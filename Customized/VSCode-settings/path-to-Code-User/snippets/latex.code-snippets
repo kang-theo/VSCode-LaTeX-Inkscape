@@ -33,7 +33,7 @@
 			"\t\\label{fig:${1:$CLIPBOARD}}",
 			"\\end{figure}",
 		],
-		"description": "Inserts mathematical diagram"
+		"description": "Insert mathematical diagram."
 	},
 	// Todo: extend to specify the figure size, check the definition of incfig below or in gillescastel's lecture-notes preamble
 	// \newcommand{\incfig}[1]{%
@@ -47,7 +47,7 @@
 	// }
 
 	"incfigExcelTable": {
-		"prefix": "in",
+		"prefix": "incfigExcelTable",
 		"body": [
 			"\\begin{table}[htbp]",
 			"\t\\centering",
@@ -56,7 +56,20 @@
 			"\t\\label{table:${1:$CLIPBOARD}}",
 			"\\end{table}",
 		],
-		"description": "Inserts a table"
-	}
+		"description": "Insert a table."
+	},
+
+	"incfigXMind": {
+		"prefix": "incfigXMind",
+		"body": [
+			"\\begin{figure}[H]",
+			"\t\\centering",
+			"\t\\incfig{${1:$CLIPBOARD}}",
+			"\t\\caption{${2:What is the mindmap?}}",
+			"\t\\label{fig:${1:$CLIPBOARD}}",
+			"\\end{figure}",
+		],
+		"description": "Insert a mindmap."
+	},
     //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 }

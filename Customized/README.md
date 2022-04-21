@@ -102,7 +102,10 @@ Support import XMind exported **svg**.
 2. The ```inkscape-figures watch``` will monitor the **svg** creation and generate **pdf** and **pdf_tex** using "Inkscape".
 3. Rebuild your tex to see the effect.
 
-- [ ] **Todo**: The figure is not what it looks in original svg.
+- [ ] **Todo**: Package inputenc Error: Unicode character ‎ (U+200E) in .pdf_tex. This can be solved temporarily by removing the character (0x200e LEFT-TO-RIGHT MARK).
+- [ ] **Todo**: The figure is not what it looks like in original svg.
+- [ ] **Todo**: After triggered ```ctrl+i x```, the content (generally the filename) copied into clipboard has an extra linefeed. This can resolved by select the name explicitly.
+
 ## 5. For whom not familiar with latex commands for math formula
 
 ```Mathpix``` ```EquationMaker``` ```Detexify``` ```Mathkey``` ```Mathcha``` ```Quiver```

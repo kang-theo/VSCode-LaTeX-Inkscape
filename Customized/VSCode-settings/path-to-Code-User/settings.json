@@ -28,12 +28,9 @@
         // "quiver": "open -na 'Google Chrome' --args --new-window <path-to-quiver>/quiver/src/index.html"
         // 2. quiver online
         "quiver": "open -na 'Google Chrome' --args --new-window https://q.uiver.app/",
-
         "excalidraw": "open -na 'Google Chrome' --args --new-window https://excalidraw.com",
-
-        "excel": "cd ${workspaceFolder}/Tex/How_I_am_able_to_take_notes_in_mathematics_lectures_using_LaTeX/KNotes/kTestNote/Figures/ && cp Templates/Excel.xlsx `pbpaste`.xlsx  && open -a 'Microsoft Excel' `pbpaste`.xlsx",
-
-        "xmind": "cd ${workspaceFolder}/Tex/How_I_am_able_to_take_notes_in_mathematics_lectures_using_LaTeX/KNotes/kTestNote/Figures/ && cp Templates/XMind.xmind `pbpaste`.xmind  && open -a 'XMind' `pbpaste`.xmind"
+        "excel": "cd ${workspaceFolder}/Customized/kTestNote/Figures/ && cp Templates/Excel.xlsx `pbpaste`.xlsx  && open -a 'Microsoft Excel' `pbpaste`.xlsx",
+        "xmind": "cd ${workspaceFolder}/Customized/kTestNote/Figures/ && cp Templates/XMind.xmind `pbpaste`.xmind  && open -a 'XMind' `pbpaste`.xmind"
     },
     //b. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 }

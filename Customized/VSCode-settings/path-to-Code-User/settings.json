@@ -32,7 +32,9 @@
 
         "excalidraw": "open -na 'Google Chrome' --args --new-window https://excalidraw.com",
 
-        "excel": "open -a 'Microsoft Excel'"
+        "excel": "cd ${workspaceFolder}/Tex/How_I_am_able_to_take_notes_in_mathematics_lectures_using_LaTeX/KNotes/kTestNote/Figures/ && cp Templates/Excel.xlsx `pbpaste`.xlsx  && open -a 'Microsoft Excel' `pbpaste`.xlsx",
+
+        // "xmind": "cd ${workspaceFolder}/Tex/How_I_am_able_to_take_notes_in_mathematics_lectures_using_LaTeX/KNotes/kTestNote/Figures/ && cp Templates/Excel.xlsx `pbpaste`.xlsx  && open -a 'Microsoft Excel' `pbpaste`.xlsx"
     },
-    //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
+    //b. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 }

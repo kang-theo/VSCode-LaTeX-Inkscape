@@ -20,8 +20,9 @@
         //https://www.pbb.wtf/posts/LaTeX-Inkscape
         //https://github.com/sleepymalc/VSCode-LaTeX-Inkscape/blob/main/README.md
         //https://github.com/gillescastel/inkscape-figures
-		//https://github.com/gillescastel/inkscape-shortcut-manager
-		//https://github.com/gillescastel/lecture-notes
+	//https: //github.com/gillescastel/inkscape-shortcut-manager
+	//https://github.com/gillescastel/lecture-notes
+
 	"incfig": {
 		"prefix": "incfig",
 		"body": [
@@ -33,7 +34,7 @@
 			"\\end{figure}",
 		],
 		"description": "Inserts mathematical diagram"
-	}
+	},
 	// Todo: extend to specify the figure size, check the definition of incfig below or in gillescastel's lecture-notes preamble
 	// \newcommand{\incfig}[1]{%
 	// 	\def\svgwidth{\columnwidth}
@@ -44,5 +45,18 @@
 	// 	\def\svgwidth{#1\columnwidth}
 	// 	\import{./figures/}{#2.pdf_tex}
 	// }
+
+	"incfigExcelTable": {
+		"prefix": "in",
+		"body": [
+			"\\begin{table}[htbp]",
+			"\t\\centering",
+			"\t\\caption{${2:What is the table?}}",
+			"\t${3:Paste tex exported by Excel2LaTeX}",
+			"\t\\label{table:${1:$CLIPBOARD}}",
+			"\\end{table}",
+		],
+		"description": "Inserts a table"
+	}
     //e. sleepymalc/VSCode-LaTeX-Inkscape: use vscode + latex + inkscape on macOS to take notes
 }

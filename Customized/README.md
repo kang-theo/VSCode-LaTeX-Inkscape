@@ -52,6 +52,8 @@ Stay tuned.
 # Misc
 ## 1. HyperSnips for math snippets
 
+- [x] **Done** with ```sleepymalc/VSCode-LaTeX-Inkscape```'s latex.hsnips. **See** also ```OrangeX4/hsnips```'s hsnips.
+
 Use "context" in HyperSnips extension to solve the auto completion in non-mathetical environment.
 
 > One thing to consider when writing these snippets is, ‘will these snippets collide with usual text?’ For example, according to my dictionary, there are about 72 words in English and 2000 words in Dutch that contain  **`sr`**, which means that while I’m typing the word **`disregard`**, the **`sr`** would expand to **`^2`**, giving me **`di^2egard`**.
@@ -59,9 +61,9 @@ Use "context" in HyperSnips extension to solve the auto completion in non-mathet
 > The solution to this problem is adding a **context** to snippets. Using the syntax highlighting of Vim, it can be determined whether or not UltiSnips should expand the snippet depending if you’re in math or text. Add the following to the top of your snippets file:
 > [How I&#39;m able to take notes in mathematics lectures using LaTeX and Vim](https://castel.dev/post/lecture-notes-1/#context)#Context.
 
-- [x] **Done** with ```sleepymalc/VSCode-LaTeX-Inkscape```'s latex.hsnips. **See** also ```OrangeX4/hsnips```'s hsnips.
-
 ## 2. Excalidraw.com integration
+
+- [x] **Done** 
 
 [Excalidraw.com](https://excalidraw.com) can draw and export **.svg** figures, so:
 
@@ -120,7 +122,18 @@ Support import XMind exported **svg**.
 </span>
 
 ## 6. Correcting spelling mistakes on the fly
-- [ ] **Todo**.
+
+- [x] **Done** with [sleepymalc/VSCode-LaTeX-Inkscape#Correcting spelling mistakes on the fly](https://github.com/kang-theo/VSCode-LaTeX-Inkscape#correcting-spelling-mistakes-on-the-fly)
+
+  Extensions used:
+  1. Code Spell Checker
+  2. LTeX
+
+  Shortcut defined:
+  1. ```ctrl+;```: spell check
+  2. ```ctrl+'```: grammar check
+
+  The automatically selecting the first quickfix is not always efficient, so it is changed to be in a manual mode.
 
 # Credits
 

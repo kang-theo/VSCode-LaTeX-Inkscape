@@ -7,7 +7,7 @@
         //https: //github.com/gillescastel/inkscape-shortcut-manager
         //https://github.com/gillescastel/lecture-notes
 
-    // Sympy setup (kcy: not installed)
+    // Sympy setup (not installed)
     // {
     //     "key": "shift+e",
     //     "command": "latex-sympy-calculator.equal",
@@ -28,41 +28,43 @@
     //     "command": "-latex-sympy-calculator.replace",
     //     "when": "editorHasSelection && editorTextFocus && resourceLangId == 'latex' || editorHasSelection && editorTextFocus && resourceLangId == 'markdown'"
     // },
-    // Auto Correction setup (kcy: not installed)
-    // {
-    //     "key": "cmd+l",
-    //     "command": "extension.multiCommand.execute",
-    //     "args": {
-    //         "sequence": [
-    //             "cSpell.goToPreviousSpellingIssue",
-    //             {
-    //                 "command": "editor.action.codeAction",
-    //                 "args": {
-    //                     "kind": "quickfix",
-    //                     "apply": "first"
-    //                 }
-    //             },
-    //             "cursorUndo",
-    //         ]
-    //     }
-    // },
-    // {
-    //     "key": "cmd+k",
-    //     "command": "extension.multiCommand.execute",
-    //     "args": {
-    //         "sequence": [
-    //             "editor.action.marker.prev",
-    //             {
-    //                 "command": "editor.action.codeAction",
-    //                 "args": {
-    //                     "kind": "quickfix",
-    //                     "apply": "first"
-    //                 }
-    //             },
-    //             "cursorUndo",
-    //         ]
-    //     }
-    // },
+    // Auto Correction setup (not that useful, so change to select items manually)
+    {
+        "key": "cmd+'", //correct spell errors
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "cSpell.goToPreviousSpellingIssue",
+                {
+                    // "command": "editor.action.codeAction",
+                    // "args": {
+                    //     "kind": "quickfix",
+                    //     "apply": "first"
+                    // }
+                    "command": "editor.action.quickFix"
+                },
+                "cursorUndo",
+            ]
+        }
+    },
+    {
+        "key": "ctrl+", // correct grammar errors
+        "command": "extension.multiCommand.execute",
+        "args": {
+            "sequence": [
+                "editor.action.marker.prev",
+                {
+                    // "command": "editor.action.codeAction",
+                    // "args": {
+                    //     "kind": "quickfix",
+                    //     "apply": "first"
+                    // }
+                    "command": "editor.action.quickFix"
+                },
+                "cursorUndo",
+            ]
+        }
+    },
 
     //-------------------------------------------------------------------------------------------------------------
     // Inkscape setup
